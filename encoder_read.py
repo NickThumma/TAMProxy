@@ -4,8 +4,8 @@ from tamproxy.devices import Encoder
 # Prints a quadrature encoder's position
 class EncoderRead(SyncedSketch):
 
-    pins = 5, 6
-
+    #pins = 5, 6
+    pins = 6,7
     def setup(self):
         self.encoder = Encoder(self.tamp, *self.pins, continuous=True)
         self.timer = Timer()
